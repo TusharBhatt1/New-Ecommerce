@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import Navbar from '../Components/Navbar'
-import { cartContext } from '../ContextApi/Context'
+import { cartContext } from '../ContextAPI/Context'
 
 export default function ProductDetails() {
 
