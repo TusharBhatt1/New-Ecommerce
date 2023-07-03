@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 export default function Intro() {
   return (
-    <div className='h-screen tracking-wide bg-gradient-to-r from-blue-100 via-white to-blue-300 flex justify-center items-center'>
+    <div className='h-screen tracking-wider bg-gradient-to-r from-blue-100 via-white to-blue-300 flex justify-center items-center'>
    <div className='flex flex-col justify-center items-center gap-8 text-sm s350:text-lg' >
     <img src={Myself} className='h-20 w-20 rounded-full' alt='Tushar Bhatt'/>
     <p className='text-center font-semibold font-serif'>Welcome to our React Ecommerce store ! <br/>Discover a wide selection of Products and Shop with ease. <br/><br/> Happy Shopping!</p>
