@@ -98,17 +98,17 @@ cartItems && duplicateItem ? setCartItems((prev)=>[...prev]) :    setCartItems(p
      {/* isLoading */}
      { isLoading ?
      <div className='flex flex-wrap m-auto gap-20 justify-center items-center'>
-     <div className=' animate-pulse bg-gradient-to-r from-gray-100 via-white to-gray-400 h-80 bg-gray text-center border-b-2 w-80 '>
+     <div className=' animate-pulse bg-gradient-to-r from-gray-300 via-white to-gray-300 h-80 bg-gray text-center border-b-2 w-80 '>
      </div>                         
-     <div className='  animate-pulse bg-gradient-to-r from-gray-100 via-white to-gray-400 h-80 bg-gray text-center border-b-2 w-80 '>
+     <div className='  animate-pulse bg-gradient-to-r from-gray-300 via-white to-gray-300 h-80 bg-gray text-center border-b-2 w-80 '>
      </div>
-     <div className=' animate-pulse bg-gradient-to-r from-gray-100 via-white to-gray-400 h-80 text-center border-b-2  w-80  '>
+     <div className=' animate-pulse bg-gradient-to-r from-gray-300 via-white to-gray-300 h-80 text-center border-b-2  w-80  '>
      </div>
-     <div className=' animate-pulse bg-gradient-to-r from-gray-100 via-white to-gray-400 h-80 text-center border-b-2  w-80  '>
+     <div className=' animate-pulse bg-gradient-to-r from-gray-300 via-white to-gray-300 h-80 text-center border-b-2  w-80  '>
      </div>
-     <div className=' animate-pulse bg-gradient-to-r from-gray-100 via-white to-gray-400 h-80 text-center border-b-2  w-80  '>
+     <div className=' animate-pulse bg-gradient-to-r from-gray-300 via-white to-gray-300 h-80 text-center border-b-2  w-80  '>
      </div>
-     <div className=' animate-pulse bg-gradient-to-r from-gray-100 via-white to-gray-400 h-80 text-center border-b-2  w-80  '>
+     <div className=' animate-pulse bg-gradient-to-r from-gray-300 via-white to-gray-300 h-80 text-center border-b-2  w-80  '>
      </div>
 
      </div>
