@@ -58,8 +58,10 @@ export default function Cart() {
      { cartItems.map(item=>(
         
         <div className='mb-10 text-sm sm:text-lg flex justify-around items-center font-semibold'>
-        
+        <Link to={`/details/${item.id}`}>
+
         <img src={item.images[0]} className='w-12 s350:w-20 h-15 rounded-lg' alt={item.title}/>
+        </Link>
        
         <p>Rs {item.price*80*quantity}</p>
         <select onChange={(e)=>setQuantity(e.target.value)}>
