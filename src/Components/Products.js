@@ -74,7 +74,7 @@ cartItems && duplicateItem ? setCartItems((prev)=>[...prev]) :    setCartItems(p
 
     //Throttling
     setIsDisabled(true)
-    setTimeout(()=>{setIsDisabled(false)},1500)
+    setTimeout(()=>{setIsDisabled(false)},1000)
         
     
   }
