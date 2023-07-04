@@ -72,7 +72,7 @@ const handleLike=(index,product)=>{
    setLikes(updatedLikes)
 
    //Add to wishlist
-   like[index] ? setWishList((prev)=>[...prev,product]) : setWishList(wishList.filter((item)=>item.id!==product.id))
+   // like[id] ? setWishList((prev)=>[...prev,product]) : setWishList(wishList.filter((item)=>item.id!==product.id))
 }
    
 // Handling Add To Cart
@@ -138,7 +138,7 @@ cartItems && duplicateItem ? setCartItems((prev)=>[...prev]) :    setCartItems(p
      /* Products */
     <div className='flex flex-wrap m-auto gap-20 justify-center items-center'>
    
-        {data.map((product,index)=>(
+        {data.map((product)=>(
           
             <div key={product.id} className=' text-center border-b-2 flex justify-center gap-5 flex-col p-4 border-black w-80 h-auto tracking-wider font-semibold '>
              <Link to={`/details/${product.id}`}>
@@ -151,7 +151,7 @@ cartItems && duplicateItem ? setCartItems((prev)=>[...prev]) :    setCartItems(p
             {addedProduct && addedProduct.id===product.id && <p className='animate-bounce rounded  absolute bg-green-400 text-white w-20 m-auto p-1'>Added</p>}
 
                 {/* Wishlist */}
-                <img  onClick={()=>handleLike(index,product)} src={likes[index] ? liked  : like} className='h-5 cursor-pointer' alt="like"/>
+                <img  onClick={()=>handleLike(product.id,product)} src={likes[product.id] ? liked  : like} className='h-5 cursor-pointer' alt="like"/>
                 
                 
 
