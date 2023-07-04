@@ -2,13 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Context from './ContextAPI/Context';
+import WishlistContext from "./ContextAPI/WishlistContext";
+import CartContext from './ContextAPI/CartContext';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
     
-    <Context>
+    <CartContext>
+    <WishlistContext>
     <App />
-    </Context>
+    </WishlistContext>
+    </CartContext>
 )
 
 // If you want to start measuring performance in your app, pass a function

@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from 'react'
 import Navbar from '../Components/Navbar'
-import { cartContext } from '../ContextAPI/Context'
+import { cartContext } from '../ContextAPI/CartContext'
 import { Link } from 'react-router-dom'
 export default function Cart() {
 
