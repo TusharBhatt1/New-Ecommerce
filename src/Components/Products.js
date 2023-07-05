@@ -105,7 +105,7 @@ cartItems && duplicateItem ? setCartItems((prev)=>[...prev]) :    setCartItems(p
 
     /*Categories*/
     <div className='bg-gradient-to-r from-blue-100 via-white to-blue-100'>
-    <div className='w-40 m-auto text-center text-sm font-serif font-bold mb-10 s350:mt-14'>
+    <div className='w-40 m-auto text-center text-sm font-serif font-bold p-2 mb-10 s350:mt-14'>
         <select className=' p-2 bg-black text-white hover:pointer' onChange={(e)=>setCategory(e.target.value)}>
             <option value={""}>All</option>
            {categories.map((c,index)=>(
