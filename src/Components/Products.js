@@ -104,7 +104,7 @@ cartItems && duplicateItem ? setCartItems((prev)=>[...prev]) :    setCartItems(p
   return (
 
     /*Categories*/
-    <div className='bg-gradient-to-r from-blue-100 via-white to-blue-300'>
+    <div className='bg-gradient-to-r from-blue-100 via-white to-blue-100'>
     <div className='w-40 m-auto text-center text-sm font-serif font-bold mb-10 s350:mt-14'>
         <select className=' p-2 bg-black text-white hover:pointer' onChange={(e)=>setCategory(e.target.value)}>
             <option value={""}>All</option>
@@ -156,7 +156,7 @@ cartItems && duplicateItem ? setCartItems((prev)=>[...prev]) :    setCartItems(p
                 
 
    
-                <button onClick={()=>handleAddToCart(product)} disabled={isDisabled} className=' text-sm border-2 border-blue-500 w-30 m-auto p-2 rounded-xl hover:bg-blue-500'>
+                <button onClick={()=>handleAddToCart(product)} disabled={isDisabled} className=' text-sm border-2 border-blue-500 w-30 m-auto p-2 rounded-xl hover:bg-blue-400'>
                    Add To Cart
                 </button>
                 
