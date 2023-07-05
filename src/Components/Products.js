@@ -104,7 +104,7 @@ cartItems && duplicateItem ? setCartItems((prev)=>[...prev]) :    setCartItems(p
   return (
 
     /*Categories*/
-    <div className=''>
+    <div className='bg-gradient-to-r from-blue-100 via-white to-blue-300'>
     <div className='w-40 m-auto text-center text-sm font-serif font-bold mb-10 s350:mt-14'>
         <select className=' p-2 bg-black text-white hover:pointer' onChange={(e)=>setCategory(e.target.value)}>
             <option value={""}>All</option>
@@ -140,7 +140,7 @@ cartItems && duplicateItem ? setCartItems((prev)=>[...prev]) :    setCartItems(p
    
         {data.map((product)=>(
           
-            <div key={product.id} className=' text-center border-b-2 flex justify-center gap-5 flex-col p-4 border-black w-80 h-auto tracking-wider font-semibold '>
+            <div key={product.id} className=' text-center border-b-2 bg-white rounded-md flex justify-center gap-5 flex-col p-4 border-black w-80 h-auto tracking-wider font-semibold '>
              <Link to={`/details/${product.id}`}>
 
                 <img src={product.images[0]} className=' h-40 s350:h-52 w-60 flex m-auto ' alt={product.title}/>
